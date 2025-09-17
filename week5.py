@@ -72,10 +72,12 @@
 
 # latihan progam modul 5
 n = int(input('Masukkan jumlah bilangan yang akan dipangkatkan : '))
-x = -1
-y = 0
+x, y = -1, 0
+if n <= 0:
+    print('perhitungan tidak dapat diproses')
 for i in range (n):
     x = x+2
     print(x)
     y=y+x
 print(f'jumlah: {y}')                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                
+
