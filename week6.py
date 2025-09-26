@@ -1,3 +1,5 @@
+# Oryza Valendio 
+
 # # user defined function
 # def halo_dunia():
 #     print('Hallo dunia!')
@@ -90,3 +92,4 @@ n = int(input("Masukkan jumlah bilangan Fibonacci: "))
 print(f"Deret Fibonacci sebanyak {n} bilangan:")
 for i in range(n):
     print(fibonacci(i), end=" ")
+
