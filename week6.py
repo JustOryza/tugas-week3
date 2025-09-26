@@ -70,10 +70,23 @@
 #     print(f'Perulangan ke {i}')
 # tampilAngka(5)
 
-def fn_recursive (nilai, i=2):
-    if (i < nilai):
-        fn_recursive(nilai, i+1)
-    x = nilai * (i-1)
-    # print(f'{i} * {i-1}')
-    print(x)
-fn_recursive(5)
+# 1
+def faktorial(n):
+    if n == 0 or n == 1:
+        return 1
+    else:
+        return n * faktorial(n - 1)
+angka = int(input("Masukkan angka: "))
+hasil = faktorial(angka)
+print(f"{angka}! = {hasil}")
+
+# 2
+def fibonacci(n):
+    if n <= 1:
+        return n
+    else:
+        return fibonacci(n-1) + fibonacci(n-2)
+n = int(input("Masukkan jumlah bilangan Fibonacci: "))
+print(f"Deret Fibonacci sebanyak {n} bilangan:")
+for i in range(n):
+    print(fibonacci(i), end=" ")
