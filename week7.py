@@ -59,6 +59,52 @@ artikel = {
 }
 print(artikel.get('judul'))
 
+
+artikel = {
+    "judul": "Menu Masakan Enak",
+    "judul": "Menu Masakan Enak Tradisional"
+}
+print (artikel.get ("judul"))
+
+pertemuan_hari_ini = {
+    "Judul": "Belajar Dictionary Pada Python 3",
+    "Tanggal": "01 Februari 2021", 
+    "kategori": [
+        "Python", "Python Dasar"
+    ],
+    "pageviews": 10, 
+    "published": True,
+    "share_count": {
+        "facebook": 0, 
+        "twitter": 2
+    }
+}
+
+print ('Judul:', pertemuan_hari_ini.get ('Judul'))
+#atau
+print ('Tanggal:', pertemuan_hari_ini ['Tanggal'])
+
+#bisa menggunakan fungsi berantai untuk dictionary bertingkat
+print ('Facebook share:',
+pertemuan_hari_ini.get ('share_count').get ('Facebook'))
+
+#bisa juga dengan kurung siku dua_duanya
+print ('twitter share:',
+    pertemuan_hari_ini ['share_count']['twitter'])
+
+buku = {
+    'judul': 'Hafalan Sholat Delisa',
+    'Penulis': 'Tere Liye'
+}
+
+for key in buku:
+    print (key, '->', buku[key])
+
+mahasiswa = {
+    'nama' : 'Lendis Fabri',
+    'asal' : 'Indonesia'
+}
+
 # mahasiswa = {
 #     'nama' : 'Landis Fabri',
 #     'asal' : 'Indonesia'
@@ -110,4 +156,5 @@ print(artikel.get('judul'))
 #     'jenjang' : 'Sekolah dasar',
 #     'akreditasi' : 'A'
 # }
+
 # print(f'Jumlah atribut variabel sekolah adalah ; {len(sekolah)}')
